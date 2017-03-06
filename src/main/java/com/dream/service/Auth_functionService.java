@@ -20,7 +20,7 @@ public class Auth_functionService {
 	public ArrayList<HashMap<String, Object>> qry(HttpSession session,HashMap<String, Object> map) {
 		return auth_functionMapper.select_map(map);
 	}
-
+ 
 	public HashMap<String, Object> select_list(HttpSession session,HashMap<String, Object> map) {
 		HashMap<String, Object> maps = new HashMap<String, Object>();
 		maps.put("rows",auth_functionMapper.select_map(map));
