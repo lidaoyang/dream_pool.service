@@ -16,7 +16,7 @@ import com.util.StrUtils;
 public class Auth_functionService {
 	@Autowired
 	private Auth_functionMapper auth_functionMapper;
-
+ 
 	public ArrayList<HashMap<String, Object>> qry(HttpSession session,HashMap<String, Object> map) {
 		return auth_functionMapper.select_map(map);
 	}
