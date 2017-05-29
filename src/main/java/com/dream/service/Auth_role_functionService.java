@@ -41,12 +41,8 @@ public class Auth_role_functionService {
 	public String select_count(HttpSession session,HashMap<String, Object> map) {
 		return auth_role_functionMapper.select_count(map);
 	}
-	public int insertBatch(ArrayList<Auth_role_function> list){
-		return auth_role_functionMapper.insertBatch(list);
-	}
-	
-	public int insertBatchUpdate(ArrayList<Auth_role_function> list){
-		return auth_role_functionMapper.insertBatchUpdate(list);
+	public int insertBatch(ArrayList<Auth_role_function> auth_role_function){
+		return auth_role_functionMapper.insertBatch(auth_role_function);
 	}
 
 	public int save(Auth_role_function auth_role_function, HttpSession session){
