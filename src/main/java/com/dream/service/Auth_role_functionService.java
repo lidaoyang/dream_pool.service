@@ -44,6 +44,10 @@ public class Auth_role_functionService {
 	public int insertBatch(ArrayList<Auth_role_function> auth_role_function){
 		return auth_role_functionMapper.insertBatch(auth_role_function);
 	}
+	
+	public int insertBatchUpdate(ArrayList<Auth_role_function> auth_role_function){
+		return auth_role_functionMapper.insertBatchUpdate(auth_role_function);
+	}
 
 	public int save(Auth_role_function auth_role_function, HttpSession session){
 		String edit_type = auth_role_function.getEdit_type();
